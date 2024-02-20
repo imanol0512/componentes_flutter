@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practica3/theme/app_theme.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,29 +8,48 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Componentes de flutter'),
+        title: const Text('Componentes de Flutter'),
       ),
       body: ListView(
-        children: const <Widget>[
+        children: <Widget>[
           ListTile(
-            title: Text('Kc campeones del super Bowl 58'),
-            subtitle: Text('Las vegas -11/02/2024'),
-            leading: Icon(Icons.casino),
-            trailing: Icon(Icons.arrow_circle_right_rounded),
+            title: Text(
+              'Entradas',
+              //style:Theme.of(context).textTheme.headlineLarge,
+              style: AppTheme.lightTheme.textTheme.headlineLarge,
+            ),
+            subtitle: Text(
+              'Introducioendo valores',
+              style: AppTheme.lightTheme.textTheme.bodySmall,
+            ),
+            leading: const Icon(Icons.input),
+            trailing: const Icon(Icons.arrow_circle_right_rounded),
           ),
-          Divider(),
+          const Divider(),
           ListTile(
-            title: Text('Kc campeones del super Bowl 57'),
-            subtitle: Text('Arizona -10/02/2023'),
-            leading: Icon(Icons.price_check_sharp),
-            trailing: Icon(Icons.arrow_circle_right_rounded),
+            title: Text(
+              'Listview.builder',
+              style: AppTheme.lightTheme.textTheme.headlineLarge,
+            ),
+            subtitle: Text(
+              'Lista con sroll infinito',
+              style: AppTheme.lightTheme.textTheme.bodySmall,
+            ),
+            leading: const Icon(Icons.beach_access),
+            trailing: const Icon(Icons.arrow_circle_right_rounded),
           ),
-          Divider(),
+          const Divider(),
           ListTile(
-            title: Text('Kc campeones del super Bowl 54'),
-            subtitle: Text('Miami -02/02/220'),
-            leading: Icon(Icons.beach_access),
-            trailing: Icon(Icons.arrow_circle_right_rounded),
+            title: Text(
+              'Notificaciones',
+              style: AppTheme.lightTheme.textTheme.headlineLarge,
+            ),
+            subtitle: Text(
+              'Mostar una notificacion ',
+              style: AppTheme.lightTheme.textTheme.bodySmall,
+            ),
+            leading: const Icon(Icons.input),
+            trailing: const Icon(Icons.arrow_circle_right_rounded),
           ),
         ],
       ),
