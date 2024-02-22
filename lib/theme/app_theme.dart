@@ -6,7 +6,7 @@ class AppTheme {
   //constante de color primario
   static const primaryColor = Color.fromARGB(246, 255, 255, 255);
   //constante d ecolor secundario
-  static const secondaryColor = Colors.black;
+  static const secondaryColor = Color.fromARGB(255, 165, 163, 163);
   //constante de color de fondo
   static const backColor = Color.fromARGB(246, 151, 229, 237);
   //constante de temas
@@ -22,7 +22,7 @@ class AppTheme {
         fontSize: 26.5,
         fontWeight: FontWeight.w500,
         decoration: TextDecoration.underline,
-        decorationColor: const Color.fromARGB(255, 0, 0, 0),
+        decorationColor: const Color.fromARGB(255, 165, 163, 163),
         decorationStyle: TextDecorationStyle.wavy,
         decorationThickness: 1.0,
       ),
