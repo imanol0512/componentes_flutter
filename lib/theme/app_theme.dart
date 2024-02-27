@@ -47,6 +47,11 @@ class AppTheme {
         decorationStyle: TextDecorationStyle.wavy,
         decorationThickness: 1.0,
       ),
+      headlineMedium: GoogleFonts.montserrat(
+        color: Colors.white,
+        fontSize: 21.5,
+        fontWeight: FontWeight.bold,
+      ),
       //estilo para texto muy pequeño
       bodySmall: GoogleFonts.bebasNeue(color: secondaryColor, fontSize: 16.0),
     ),
