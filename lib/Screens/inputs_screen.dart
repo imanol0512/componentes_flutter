@@ -34,7 +34,7 @@ class _InputsScreenState extends State<InputsScreen> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color.fromARGB(255, 166, 152, 255),
+        backgroundColor: const Color.fromARGB(255, 166, 152, 255),
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
