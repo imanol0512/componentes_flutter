@@ -6,9 +6,10 @@ class AppTheme {
   //constante de color primario
   static const primaryColor = Color.fromARGB(246, 255, 255, 255);
   //constante d ecolor secundario
-  static const secondaryColor = Color.fromARGB(255, 165, 163, 163);
+  static const secondaryColor = Color.fromARGB(255, 0, 0, 0);
   //constante de color de fondo
   static const backColor = Color.fromARGB(246, 151, 229, 237);
+
   //constante de temas
   static final ThemeData lightTheme = ThemeData.light().copyWith(
     scaffoldBackgroundColor: backColor,
@@ -52,8 +53,13 @@ class AppTheme {
         fontSize: 21.5,
         fontWeight: FontWeight.bold,
       ),
+      headlineSmall: GoogleFonts.bebasNeue(
+        color: Colors.black,
+        fontSize: 26.5,
+        fontWeight: FontWeight.w500,
+      ),
       //estilo para texto muy pequeño
-      bodySmall: GoogleFonts.bebasNeue(color: secondaryColor, fontSize: 16.0),
+      bodySmall: GoogleFonts.bebasNeue(color: secondaryColor, fontSize: 19.0),
     ),
   );
 }
